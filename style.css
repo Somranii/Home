@@ -263,9 +263,7 @@ a { color: inherit; }
 .home__social{
     display: grid;
     grid-template-columns:auto;
-    border: none;
-   width: auto;
-    
+  
 } 
 
 
