@@ -286,6 +286,9 @@ section .title::after{
     content: "who i am";
 }
 
+.about .text{
+    color: var(--Tc);
+}
 
 .about .para{
     color: var(--Tc);
@@ -293,9 +296,6 @@ section .title::after{
      
  }
 
- .about .text{
-     color: var(--Tc);
- }
 .about .about-content .left{
     width: 45%;
 }
@@ -397,10 +397,18 @@ section .title::after{
 
 /* skills section styling */
 
+ 
 .skills .title{
     color: var(--TitleC);
  }
-
+ 
+ .skills .text{
+     color:var(--Tc);
+ 
+ }
+ .skills .para{
+     color:var(--Tc);
+ }
 
 .skills .title::after{
     background-color: var(--f3);
