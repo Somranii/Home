@@ -1,7 +1,12 @@
 /*  import google fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
 :root {
     --f1:CornflowerBlue; /* dark blue */
@@ -9,14 +14,7 @@
     --f3:#fff; 
     --TitleC: #222;
     --Tc : #111;
-    
-    /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 219; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-    /* Dark theme */
-   
-    /*========== Font and typography ==========*/
 
 }
 
@@ -26,21 +24,10 @@ body.dark-theme{
     --f3: #363636;
     --TitleC: #fff; 
     --Tc: #fff; 
+
 }
 
 
-
-.links{
-   font: Ubuntu;
-   font-size: 40px;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
 html{
     scroll-behavior: smooth;
 }
@@ -57,69 +44,15 @@ html{
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(16, 21, 41, 0.678);
+    background: #555;
 }
 
 /* all similar content styling codes */
 section{
     padding: 100px 0;
 }
-
-.mailto{
-    display:block;
-    width:100px;
-    height:20px;
-  }
-.home__social{
-    display: grid;
-    grid-template-columns:auto;
-
-    row-gap: 10px;
-    
-}
-.circle {
-   
-        vertical-align: middle;
-        width: 300px;
-        height: 200px;
-        border-color: rgba(100, 148, 237, 0.726);
-        border-style: solid;
-        border-radius: 2.5%;
-
-}
-
-.Projects .card{
-    padding :0;
-}
-
-
-.home__social-icon{
-    font-size: 1.25rem;
-    color : rgba(255, 255, 255, 0.801);
-    border: none;
-}
-.home__social-icon:hover{
-    color:var(--f1);
-}
-
-
-.home .max-width{
-    padding-top: 5%;
-    display: grid;
-    grid-template-columns: .3fr 2.5fr;
-    max-width: 100%;
- 
-}
-
-.Projects .proj-content{
-    padding-top: 5%; 
-    grid-template-columns: 3fr 3fr;
- 
-}
-
-
 .max-width{
-    max-width: 100%;
+    max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
@@ -130,14 +63,12 @@ section{
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content,
-.Projects .proj-content
-{
+.Projects .proj-content{
     display: flex;
-
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-
 section .title{
     position: relative;
     text-align: center;
@@ -168,6 +99,14 @@ section .title::after{
     transform: translateX(-50%);
 }
 
+.about, .skills, .contact{
+    color : #fff;
+    background :var(--f3);
+}
+.services, .Projects{
+    color:#fff;
+    background: var(--f2);
+}
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -202,11 +141,7 @@ section .title::after{
     list-style: none;
     display: inline-block;
 }
-.max-width .home__social-icon{
-    border: none;
-    background: none;
-}
-.navbar .menu li a, .menu .change-theme {
+.navbar .menu li a, .menu .change-theme{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -222,17 +157,6 @@ section .title::after{
 }
 
 /* menu btn styling */
-
-.uil-moon,.uil-sun{
- 
-        font-size: 1.25rem;
-        color:#fff;
-        margin-right: var(--mb-1);
-        cursor: pointer;
-
-
-}
-
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -244,7 +168,7 @@ section .title::after{
     height: 45px;
     width: 42px;
     background: CornflowerBlue;
-    right: 20px;
+    right: 30px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
@@ -278,19 +202,18 @@ section .title::after{
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
-    grid-template-columns: .5fr 3fr;
 }
 .home .max-width{
   width: 100%;
   display: flex;
   display: grid;
+  grid-template-columns: .3fr 2.5fr;
 }
 .home .max-width .row{
   margin-right: 0;
 }
 .home .home-content .text-1{
     font-size: 27px;
- 
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -322,14 +245,57 @@ section .title::after{
     background: none;
 }
 
+
+.home__social{
+    display: grid;
+    grid-template-columns:auto;
+    border: none;
+   width: auto;
+    
+} 
+
+
+.home__social-icon{
+    font-size: 1.25rem;
+    color : rgba(255, 255, 255, 0.801);
+    border: none;
+}
+.home__social-icon:hover{
+    color:var(--f1);
+}
+
+.home .max-width{
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: .3fr 2.5fr;
+    max-width: 100%;
+    padding-left: 5%;
+
+}
+
+
 /* about section styling */
+
 .about .title{
     color: var(--TitleC);
 }
+
 .about .title::after{
     background-color: var(--f3)   ;
+
     content: "who i am";
 }
+
+
+.about .para{
+    color: var(--Tc);
+     
+     
+ }
+
+ .about .text{
+     color: var(--Tc);
+ }
 .about .about-content .left{
     width: 45%;
 }
@@ -375,24 +341,26 @@ section .title::after{
 .services .title{
     color: var(--TitleC);
 }
+.services{
+    color:#fff;
+    background: var(--f2);
+}
+
+.services .title{
+    color: var(--TitleC);
+}
 .services, .Projects{
     color:#fff;
     background: var(--f2);
 }
 
-.about, .skills, .contact{
-    color : #fff;
-    background :var(--f3);
-}
+
 .services .title::before,
 .Projects .title::before{
     background: #fff;
 }
-
-
-.services .title::after,
-.Projects .title::after{
-    background:  var(--f2);
+.services .title::after{
+    background: var(--f2);
     content: "what i provide";
 }
 .services .serv-content .card{
@@ -428,15 +396,29 @@ section .title::after{
 }
 
 /* skills section styling */
+
 .skills .title{
-   color: var(--TitleC);
-}
-.skills .para{
-    color:var(--Tc);
-}
+    color: var(--TitleC);
+ }
+
+
 .skills .title::after{
     background-color: var(--f3);
     content: "what i know";
+}
+
+.skills .text{
+    color:var(--Tc);
+
+}
+
+.skills .para{
+    color:var(--Tc);
+}
+
+
+.skills .info{
+    color: var(--Tc);
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -499,7 +481,7 @@ section .title::after{
     width: 60%;
 }
 .skills-content .right .js::before{
-    width: 60%;
+    width: 80%;
 }
 .skills-content .right .php::before{
     width: 50%;
@@ -509,46 +491,64 @@ section .title::after{
 }
 
 /* Projects section styling */
-
-
-
 .Projects .title::after{
-    background: #111;
-    content: "What did i do";
+    background: var(--f2);
+    content: "what i did";
 }
-.Projects .proj-content .card{
+
+.Projects  .card{
     width: calc(33% - 20px);
     background: #222;
-    text-align: center;
     border-radius: 6px;
-    padding: 25px 25px;
-    cursor: pointer;
+    padding: 50px 35px;
+    text-align: center;
+   
     transition: all 0.3s ease;
 }
-.Projects .proj-content .card:hover{
+
+
+.Projects  .card:hover{
     background: CornflowerBlue;
 }
-.Projects .proj-content .card .box{
+.Projects  .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s ease;
 }
-.Projects .proj-content .card:hover .box{
+.Projects  .card:hover .box{
     transform: scale(1.05);
 }
-.Projects .proj-content .card i{
-    font-size: 50px;
-    color: CornflowerBlue;
-    transition: color 0.3s ease;
-}
-.Projects .proj-content .card:hover i{
-    color: #fff;
-}
-.Projects .proj-content .card .text{
+.Projects  .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.Projects  .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid CornflowerBlue;
+    transition: all 0.3s ease;
+}
+.Projects  .card:hover img{
+    border-color: #fff;
+}
+
 
 /* contact section styling */
+
+.contact .title{
+    color: var(--TitleC);
+ }
+
+ .contact .text, .contact .para, 
+ .contact .head{
+    color: var(--Tc);
+ }
+ 
 .contact .title::after{
     background-color: var(--f3);
     content: "get in touch";
@@ -583,7 +583,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: rgba(226, 226, 226, 0.863);
+    color: #333;
 }
 .contact .right form .fields{
     display: flex;
@@ -727,13 +727,10 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-
-    p{
-       color: #111;
-        
-        
-    }
-    .services .serv-content .card{
+    .services .serv-content .card,
+    .Projects .proj-content .card
+    
+    {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -741,6 +738,18 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+    
+.home .max-width{
+    padding-top: 5%;
+   
+    max-width: 100%;
+    padding-left: 5%;
+ 
+}
+    .home .home__social {
+        grid-template-rows:auto;
+
     }
 }
 
@@ -757,7 +766,8 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .services .serv-content .card,
+    .Projects .proj-content .card{
         width: 100%;
     }
 }
