@@ -320,10 +320,12 @@ a { color: inherit; }
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 5%;
+    border-color:   cornflowerblue ;
+    border-style:  solid ;
 }
 .about .about-content .right{
     width: 55%;
@@ -417,6 +419,10 @@ a { color: inherit; }
 
 /* skills section styling */
 
+.skills .text{
+    font-size: 25px ;
+    padding-bottom: 5%;
+}
 
  
 .skills .title{
@@ -519,6 +525,16 @@ a { color: inherit; }
     width: 70%;
 }
 
+.skills-content .right .photoshop::before{
+    width: 85%;
+}
+.skills-content .right .Illustrator::before{
+    width: 70%;
+}
+.skills-content .right .Canva::before{
+    width: 75%;
+}
+
 /* Projects section styling */
 .Projects .title::after{
     background: var(--f2);
@@ -565,6 +581,17 @@ a { color: inherit; }
 .Projects  .card:hover img{
     border-color: #fff;
 }
+
+.Projects .btn{
+    font-size: 15px;
+    background-color: cornflowerblue;
+    border : 3px solid cornflowerblue;
+    margin-top:5%;
+    padding : 5px 5px 5px 5px;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
 
 
 /* contact section styling */
