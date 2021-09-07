@@ -728,6 +728,10 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+.contact .c3
+{
+    visibility: hidden;
+}
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -815,7 +819,7 @@ footer span a:hover{
     }
     .home__social2{
         margin-top: 23%;
-        margin-left: 20%;
+        margin-left: 8%;
     }
     .h-s-i {
         font-size: 1.3rem;
@@ -876,4 +880,12 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+    .contact .c2
+    {
+        visibility: hidden;
+    }
+    .contact .c3
+{
+    visibility: visible;
+}
 }
