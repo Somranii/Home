@@ -204,24 +204,7 @@ section .title::after{
 .h-s-i {
     visibility:hidden;
 }
-.home__social{
 
-margin-top:10%;
-} 
-
-
-.home__social-icon{
-    font-size: 1.25rem;
-    color : rgba(255, 255, 255, 0.801);
-    display: grid;  
-    margin-bottom: 50%;
-    margin-left: 20%;
-}
-.home__social-icon:hover{
-    color:var(--f1);
-}
-.home .home-content .home__social{
-    width: auto;}
 .home{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
@@ -231,16 +214,40 @@ margin-top:10%;
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
+    
 }
 .home .max-width{
   width: 100%;
   display: flex;
   grid-template-columns: .3fr 2.5fr;
+
 }
 .home .max-width .row{
   margin-right: 0;
 }
+.home__social{
 
+margin-top:8%;
+} 
+
+
+.home__social-icon{
+    font-size: 1.25rem;
+    color : rgba(255, 255, 255, 0.801);
+    display: grid;  
+    margin-bottom: 50%;
+    margin-right: 50px;
+}
+.home__social-icon:hover{
+    color:var(--f1);
+}
+.home .home-content .home__social{
+    width: auto;}
+
+    .home .home-content{
+        margin-top: 3%;
+        margin-left: 7%;
+    }
 .home .home-content .text-1{
     font-size: 27px;
 }
@@ -839,7 +846,7 @@ footer span a:hover{
     }
     .home__social2{
         margin-top: 23%;
-        margin-left: 5%;
+        margin-left: 10%;
     }
     .h-s-i {
         font-size: 1.3rem;
