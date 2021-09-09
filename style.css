@@ -621,7 +621,7 @@ a { color: inherit; }
     float: left;
     width: 50%;
     
-    height: 250px; /* Should be removed. Only for demonstration */
+    height: 250px; 
     
   }
 
@@ -722,6 +722,10 @@ a { color: inherit; }
 .contact{
     padding-bottom: 5%;
 }
+.qr_code{
+    align-items: center;
+    text-align: center;
+}
 /* footer section styling */
 footer{
     background: #111;
@@ -748,7 +752,6 @@ footer span a:hover{
 {
     visibility: hidden;
 }
-
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -790,7 +793,7 @@ footer span a:hover{
     .navbar .menu li{
         display: block;
     }
-    .navbar .menu li a{
+    .navbar .menu li a, .menu .change-theme{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
