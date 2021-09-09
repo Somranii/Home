@@ -636,7 +636,7 @@ a { color: inherit; }
  .contact .c2{
     padding-left: 36px;
  }
-
+.contact .contact-content .left
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
@@ -732,6 +732,7 @@ a { color: inherit; }
 .qr_code{
     align-items: center;
     text-align: center;
+
 }
 
 .contact .sub-title{
@@ -912,12 +913,13 @@ footer span a:hover{
     }
     .contact .c2
     {
-        visibility: hidden;
+        display: none;
     }
     .contact .c3
 {
     margin-top : 3%;
     visibility: visible;
+
 }
 
 }
@@ -968,5 +970,8 @@ display: flex;
 
     .footer {
         font-size:20px;
+    }
+    .home__social2{
+        margin-left: 5%;
     }
 }
