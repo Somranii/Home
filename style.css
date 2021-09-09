@@ -961,4 +961,7 @@ display: flex;
     .home .home-content .links{
         font-size: 20px;
     }
+    .footer {
+        font-size:20px;
+    }
 }
