@@ -733,6 +733,10 @@ a { color: inherit; }
     align-items: center;
     text-align: center;
 }
+
+.contact .sub-title{
+    white-space: nowrap;
+}
 /* footer section styling */
 footer{
     background: #111;
@@ -915,6 +919,7 @@ footer span a:hover{
     margin-top : 3%;
     visibility: visible;
 }
+
 }
 
 @media (max-width : 397px) {
