@@ -1,6 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -48,10 +48,10 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 30px 0;
 }
 .max-width{
-    max-width: 100%;
+    max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
@@ -111,7 +111,7 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 20px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -126,15 +126,18 @@ section .title::after{
 }
 .navbar .logo a{
     color: #fff;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 600;
 }
 .navbar .logo a span{
     color: CornflowerBlue;
     transition: all 0.3s ease;
 }
+
+
 .navbar.sticky .logo a span{
     color: #fff;
+
 }
 .navbar .menu li{
     list-style: none;
@@ -153,6 +156,10 @@ section .title::after{
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
+}
+
+.somra{
+    margin-left: 10%;
 }
 
 /* menu btn styling */
@@ -180,6 +187,7 @@ section .title::after{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    border-radius: 30%;
 }
 .scroll-up-btn.show{
     bottom: 30px;
@@ -227,7 +235,6 @@ margin-top:10%;
 .home .max-width{
   width: 100%;
   display: flex;
-  
   grid-template-columns: .3fr 2.5fr;
 }
 .home .max-width .row{
@@ -285,8 +292,6 @@ a { color: inherit; }
 
 .home .max-width{
     padding-top: 10%;
-    display: grid;
-    grid-template-columns: .3fr 2.5fr;
     max-width: 100%;
     padding-left: 5%;
 
@@ -719,7 +724,13 @@ footer{
     padding: 15px 23px;
     color: #fff;
     text-align: center;
+
+
 }
+.qrcode{
+width: 30%;   }
+   
+
 footer span a{
     color: CornflowerBlue;
     text-decoration: none;
@@ -728,11 +739,26 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+    
+    footer .logo a{
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+    }
+    footer .logo a span{
+        color: CornflowerBlue;
+        transition: all 0.3s ease;
+    }
+
 .contact .c3
 {
-    visibility: hidden;
+    visibility: none;
 }
 
+
+.f-menu{
+    list-style: none;
+}
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -792,7 +818,7 @@ footer span a:hover{
         display : none;
     }
     .max-width{
-        max-width: 100%;
+        max-width: 80%;
     }
     .about .about-content .column{
         width: 100%;
@@ -819,7 +845,7 @@ footer span a:hover{
     }
     .home__social2{
         margin-top: 23%;
-        margin-left: 8%;
+        margin-left: 5%;
     }
     .h-s-i {
         font-size: 1.3rem;
@@ -879,6 +905,7 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+
     }
     .contact .c2
     {
@@ -889,4 +916,49 @@ footer span a:hover{
     margin-top : 3%;
     visibility: visible;
 }
+}
+
+@media (max-width : 397px) {
+    .about .about-content .left img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 15px;
+        line-height: 38px;
+        margin-right : 5%;
+    }
+
+    .home .home-content .text-2{
+        font-size: 40px;
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+    }
+    .home {
+    background: none;
+    background-color: black;
+display: flex;
+
+    }
+    .services .title::after{
+        background: var(--f2);
+        content: "what i provide";
+        font-size: 15px;
+    }
+
+    .skills .title::after{
+        background: var(--f3);
+        content: "what i did";
+        font-size: 15px;
+    }
+
+    .home .home-content .links{
+        font-size: 20px;
+    }
 }
