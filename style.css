@@ -702,7 +702,7 @@ a { color: inherit; }
 .right form .button-area button{
   color: #fff;
   display: block;
-  width: 160px!important;
+  width: 160px;
   height: 45px;
   outline: none;
   font-size: 18px;
@@ -718,6 +718,10 @@ a { color: inherit; }
   color: CornflowerBlue;
   background: none;
 }
+
+.contact{
+    padding-bottom: 5%;
+}
 /* footer section styling */
 footer{
     background: #111;
@@ -727,8 +731,7 @@ footer{
 
 
 }
-.qrcode{
-width: 30%;   }
+
    
 
 footer span a{
@@ -740,25 +743,13 @@ footer span a:hover{
 }
 
     
-    footer .logo a{
-        color: #fff;
-        font-size: 35px;
-        font-weight: 600;
-    }
-    footer .logo a span{
-        color: CornflowerBlue;
-        transition: all 0.3s ease;
-    }
 
 .contact .c3
 {
-    visibility: none;
+    visibility: hidden;
 }
 
 
-.f-menu{
-    list-style: none;
-}
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -818,7 +809,7 @@ footer span a:hover{
         display : none;
     }
     .max-width{
-        max-width: 80%;
+        max-width: 100%;
     }
     .about .about-content .column{
         width: 100%;
@@ -895,9 +886,7 @@ footer span a:hover{
     .contact .right form .email{
         margin: 0;
     }
-    .right form .error-box{
-       width: 150px;
-    }
+
     .scroll-up-btn{
         right: 15px;
         bottom: 15px;
@@ -961,6 +950,7 @@ display: flex;
     .home .home-content .links{
         font-size: 20px;
     }
+
     .footer {
         font-size:20px;
     }
