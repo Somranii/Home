@@ -332,14 +332,24 @@ a { color: inherit; }
 .about .about-content .left{
     width: 45%;
 }
-.about .about-content .left img{
-    height: 350px;
-    width: 350px;
-    object-fit: cover;
-    border-radius: 5%;
-    border-color:   cornflowerblue ;
-    border-style:  solid ;
+
+path{
+    border: 3px solid var(--TitleC) ; 
 }
+.home__img{
+    width:365px;
+    fill :var(--f1);
+    margin-right: 4%;
+ 
+ 
+}
+
+.home__img-img{
+    width: 240px;
+    height: 240px;
+
+}
+
 .about .about-content .right{
     width: 55%;
 }
@@ -929,10 +939,17 @@ footer span a:hover{
 }
 
 @media (max-width : 397px) {
-    .about .about-content .left img{
-        height: 250px;
-        width: 250px;
+    .home__img{
+        width:250px;
+        fill :var(--f1);
+     
     }
+    
+    .home__img-img{
+        width: 280px;
+        height: 280px;
+    }
+    
 
     .scroll-up-btn{
         right: 15px;
