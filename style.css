@@ -226,8 +226,8 @@ section .title::after{
   margin-right: 0;
 }
 .home__social{
-
-margin-top:8%;
+margin-left: 3%;
+margin-top:.8%;
 } 
 
 
@@ -235,8 +235,9 @@ margin-top:8%;
     font-size: 1.25rem;
     color : rgba(255, 255, 255, 0.801);
     display: grid;  
-    margin-bottom: 50%;
-    margin-right: 50px;
+    margin-bottom: 80px;
+    margin-right: 20px;
+    
 }
 .home__social-icon:hover{
     color:var(--f1);
@@ -245,7 +246,7 @@ margin-top:8%;
     width: auto;}
 
     .home .home-content{
-        margin-top: 3%;
+        margin-top: .5%;
         margin-left: 7%;
     }
 .home .home-content .text-1{
@@ -268,7 +269,7 @@ a { color: inherit; }
 .home .home-content .scroll-down {
     font-size: 23px;
     color: rgb(199, 199, 199);
-    margin-top: 8%;
+    margin-top: 15%;
 
     }
 
@@ -395,16 +396,19 @@ a { color: inherit; }
 }
 .services .title::after{
     background: var(--f2);
-    content: "what i provide";
+    content: "what i offer";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
+    height: 350px;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    align-items: center;
+    text-align: center;
 }
 .services .serv-content .card:hover{
     background: CornflowerBlue;
@@ -423,7 +427,7 @@ a { color: inherit; }
 .services .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.services .serv-content .card .head{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -954,7 +958,7 @@ display: flex;
     }
     .services .title::after{
         background: var(--f2);
-        content: "what i provide";
+        content: "what i offer";
         font-size: 15px;
     }
 
@@ -975,6 +979,12 @@ display: flex;
         margin-left: 5%;
  
     }
+}
+
+@media (max-width : 350px){
+    .services .serv-content .card{
+height : 400px    }
+
 }
 
 @media (max-width : 340px){
