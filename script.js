@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Developer", "Data Scientist", "Graphic Designer", "Freelancer"],
+        strings: ["Developer", "Data Science Student", "Graphic Designer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Data Scientist", "Graphic Designer", "Freelancer"],
+        strings: ["Developer", "Data Science Student", "Graphic Designer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -83,3 +83,4 @@ function sendEmail()
 {
     window.location = "mailto:mehdisomrani04@gmail.com";
 }
+
