@@ -571,6 +571,7 @@ path{
     width: calc(33% - 20px);
     background: #222;
     border-radius: 6px;
+    height: 450px;
     padding: 50px 35px;
     text-align: center;
    
@@ -1001,6 +1002,9 @@ display: flex;
 @media (max-width : 355px){
     .services .serv-content .card{
 height : 400px    }
+.Projects  .card{
+    height : 500px;
+}
 
 }
 
