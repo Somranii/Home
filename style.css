@@ -414,8 +414,7 @@ path{
     text-align: center;
     height: 350px;
     border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
+    padding: 50px 25px; 
     transition: all 0.3s ease;
     align-items: center;
     text-align: center;
@@ -574,7 +573,7 @@ path{
     height: 450px;
     padding: 50px 35px;
     text-align: center;
-   
+   cursor: pointer  ;
     transition: all 0.3s ease;
 }
 
