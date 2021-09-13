@@ -998,12 +998,21 @@ display: flex;
     }
 }
 
-@media (max-width : 356px){
+@media (max-width : 376px){
     .services .serv-content .card{
-height : 410px    }
+height : 430px    }
 
 .Projects  .card{
-    height : 500px;
+    height : 520px;
+}}
+
+
+@media (max-width : 358px){
+    .services .serv-content .card{
+height : 420px    }
+
+.Projects  .card{
+    height : 510px;
 }
 
 }
@@ -1015,12 +1024,12 @@ height : 410px    }
     }
 }
 
-@media (max-width : 320px){
+@media (max-width : 322px){
     .home__social2{
         margin-left: -2%;
       
     }
     .services .serv-content .card{
-        height : 440px    }
+        height : 450px    }
 
 }
