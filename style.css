@@ -998,7 +998,7 @@ display: flex;
     }
 }
 
-@media (max-width : 376px){
+@media (max-width : 377px){
     .services .serv-content .card{
 height : 430px    }
 
