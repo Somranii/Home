@@ -412,7 +412,7 @@ path{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
-    height: 350px;
+    height: 380px;
     border-radius: 6px;
     padding: 50px 25px; 
     transition: all 0.3s ease;
@@ -998,9 +998,10 @@ display: flex;
     }
 }
 
-@media (max-width : 355px){
+@media (max-width : 356px){
     .services .serv-content .card{
-height : 400px    }
+height : 410px    }
+
 .Projects  .card{
     height : 500px;
 }
@@ -1012,4 +1013,14 @@ height : 400px    }
         margin-left: 2%;
       
     }
+}
+
+@media (max-width : 320px){
+    .home__social2{
+        margin-left: -2%;
+      
+    }
+    .services .serv-content .card{
+        height : 440px    }
+
 }
