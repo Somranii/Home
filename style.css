@@ -543,7 +543,7 @@ path{
 .skills-content .right .js::before{
     width: 80%;
 }
-.skills-content .right .php::before{
+.skills-content .right .flutter::before{
     width: 50%;
 }
 .skills-content .right .mysql::before{
@@ -556,10 +556,21 @@ path{
 .skills-content .right .Illustrator::before{
     width: 70%;
 }
-.skills-content .right .Canva::before{
-    width: 75%;
+.skills-content .right .HTML::before{
+    width: 65%;
 }
-
+.skills-content .right .CSS::before{
+    width: 50%;
+}
+.skills-content .right .fs::before{
+    width: 65%;
+}
+.skills-content .right .frd::before{
+    width: 60%;
+}
+.T1{
+    padding-top: 5%;
+}
 /* Projects section styling */
 .Projects .title::after{
     background: var(--f2);
@@ -878,7 +889,7 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 695px) {
     .max-width{
         padding: 0 23px;
     }
@@ -895,6 +906,8 @@ footer span a:hover{
     .Projects .proj-content .card{
         width: 100%;
     }
+   
+        
 }
 
 @media (max-width: 500px) {
@@ -1024,7 +1037,7 @@ height : 420px    }
     }
 }
 
-@media (max-width : 322px){
+@media (max-width : 324px){
     .home__social2{
         margin-left: -2%;
       
