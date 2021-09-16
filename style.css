@@ -14,7 +14,7 @@
     --f3:#fff; 
     --TitleC: #222;
     --Tc : #111;
-
+    --f4 : rgb(27, 27, 27);
 
 }
 
@@ -22,6 +22,7 @@ body.dark-theme{
     --f1: CornflowerBlue; /* dark blue */
     --f2:#111;
     --f3: #363636;
+    --f4 : #fff;
     --TitleC: #fff; 
     --Tc: #fff; 
 
@@ -106,6 +107,9 @@ section .title::after{
     color:#fff;
     background: var(--f2);
 }
+
+
+
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -443,7 +447,10 @@ path{
 }
 
 /* skills section styling */
-
+.skills{
+    align-items: center;
+    text-align: center;
+}
 .skills .text{
     font-size: 25px ;
     padding-bottom: 5%;
@@ -534,40 +541,65 @@ path{
     top: 0;
     background: CornflowerBlue;
 }
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .flutter::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
+
+
+.skills  .card{
+    width: calc(33% - 20px);
+    background: #222;
+    border-radius: 6px;
+    height: 350px;
+    padding: 50px 35px;
+    text-align: center;
+    
+
 }
 
-.skills-content .right .photoshop::before{
-    width: 85%;
+
+.skills .card .text{
+    color: #fff;
+
 }
-.skills-content .right .Illustrator::before{
-    width: 70%;
+
+
+
+.skills .card:hover{
+    background: CornflowerBlue;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
+
 }
-.skills-content .right .HTML::before{
-    width: 65%;
+.skills .card .box{
+    transition: all 0.3s ease;
 }
-.skills-content .right .CSS::before{
-    width: 50%;
+.skills .card:hover .box{
+    transform: scale(1.05);
 }
-.skills-content .right .fs::before{
-    width: 65%;
+.skills .card i{
+    font-size: 50px;
+    color: CornflowerBlue;
+    transition: color 0.3s ease;
 }
-.skills-content .right .frd::before{
-    width: 60%;
+.skills .card:hover i{
+    color: #fff;
 }
+.skills  .card img{
+    width: 70px;
+    height: 70px;
+   
+
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.skills .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+
 .T1{
     padding-top: 5%;
 }
@@ -863,7 +895,8 @@ footer span a:hover{
         flex: 100%;
     }
     .services .serv-content .card,
-    .Projects .proj-content .card
+    .Projects .proj-content .card,
+    .skills .card
     
     {
         width: calc(50% - 10px);
@@ -887,6 +920,9 @@ footer span a:hover{
     {
         display: none;
     }
+    .skills .card img {
+        margin-left: 0%;
+    }
 }
 
 @media (max-width: 695px) {
@@ -903,7 +939,9 @@ footer span a:hover{
         font-size: 20px;
     }
     .services .serv-content .card,
-    .Projects .proj-content .card{
+    .Projects .proj-content .card,
+    .skills .card
+    {
         width: 100%;
     }
    
@@ -1035,6 +1073,13 @@ height : 420px    }
         margin-left: 2%;
       
     }
+}
+
+
+@media (max-width : 335px){
+ .skills .card{
+     height: 400px;
+ }
 }
 
 @media (max-width : 324px){
