@@ -14,7 +14,7 @@
     --f3:#fff; 
     --TitleC: #222;
     --Tc : #111;
-    --f4 : rgb(27, 27, 27);
+    --f4 :  #222;
 
 }
 
@@ -22,7 +22,7 @@ body.dark-theme{
     --f1: CornflowerBlue; /* dark blue */
     --f2:#111;
     --f3: #363636;
-    --f4 : #fff;
+    --f4 : rgb(17, 17, 17); 
     --TitleC: #fff; 
     --Tc: #fff; 
 
@@ -545,7 +545,7 @@ path{
 
 .skills  .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: var(--f4);
     border-radius: 6px;
     height: 350px;
     padding: 50px 35px;
