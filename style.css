@@ -15,6 +15,7 @@
     --TitleC: #222;
     --Tc : #111;
     --f4 :  #222;
+    --background : url("images/banner-01.jpg");
 
 }
 
@@ -25,7 +26,7 @@ body.dark-theme{
     --f4 : rgb(17, 17, 17); 
     --TitleC: #fff; 
     --Tc: #fff; 
-
+    --background : url("images/bannernight-01.jpg");
 }
 
 html{
@@ -211,7 +212,7 @@ section .title::after{
 
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: var(--background) no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -231,7 +232,6 @@ section .title::after{
 }
 .home__social{
 margin-left: 3%;
-margin-top:.8%;
 } 
 
 
@@ -250,7 +250,7 @@ margin-top:.8%;
     width: auto;}
 
     .home .home-content{
-        margin-top: .5%;
+        margin-top :-5%;
         margin-left: 7%;
     }
 .home .home-content .text-1{
@@ -298,7 +298,7 @@ a { color: inherit; }
 
 .home .home-content .links:hover{
     color: CornflowerBlue;
-    background: none;
+    background: white;
 }
 
 
@@ -342,7 +342,6 @@ path{
 }
 .home__img{
     width:365px;
-    fill :var(--f1);
     margin-right: 4%;
  
  
@@ -446,6 +445,112 @@ path{
     margin: 10px 0 7px 0;
 }
 
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+    left:3%;
+}
+
+.container .carte {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: #222;
+	margin: 20px;
+   
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .carte .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .carte:hover .content {
+	transform: translateY(-20px);
+}
+
+.container .carte .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+    border: solid 3px var(--f1);
+    border-radius: 3ch;
+}
+
+.container .carte .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.container .carte .content .contentBx h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .carte .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .carte .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+}
+.container .carte:hover .imgBx{
+visibility: hidden;
+}
+
+.container .carte:hover .contentBx{
+    visibility: hidden;
+    }
+.container .carte .sci  {
+	list-style: none;
+	margin: 20px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+    text-align: center;
+}
+
+.container .carte:hover .sci  {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .carte .sci {
+	color: #fff;
+	font-size: 20px;
+}
 /* skills section styling */
 .skills{
     align-items: center;
@@ -547,7 +652,7 @@ path{
     width: calc(33% - 20px);
     background: var(--f4);
     border-radius: 6px;
-    height: 350px;
+    height: 400px;
     padding: 50px 35px;
     text-align: center;
     
@@ -837,6 +942,10 @@ footer span a:hover{
 }
 @media (max-width: 947px){
 
+    .container {
+
+        left:0%;
+    }
     
     .menu-btn{
         display: block;
@@ -1091,3 +1200,4 @@ height : 420px    }
         height : 450px    }
 
 }
+
